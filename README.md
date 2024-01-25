@@ -1,6 +1,8 @@
 # InsightUBC
 UBC CPSC 310 project
 
+Created with a partner.
+
 ## Project commands
 
 Once your environment is configured you need to further prepare the project's tooling and dependencies.
