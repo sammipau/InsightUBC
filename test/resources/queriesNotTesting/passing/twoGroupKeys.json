@@ -1,0 +1,183 @@
+{
+	"title": "twoGroupKeys",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"sections_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_pass",
+				"overallAvg",
+				"applyKeys"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_dept",
+				"sections_pass"
+			],
+			"APPLY": [
+				{
+					"overallAvg": {
+						"COUNT": "sections_avg"
+					}
+				},
+				{
+					"applyKeys": {
+						"MAX": "sections_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "cnps",
+			"sections_pass": 16,
+			"overallAvg": 1,
+			"applyKeys": 99.19
+		},
+		{
+			"sections_dept": "cnps",
+			"sections_pass": 15,
+			"overallAvg": 1,
+			"applyKeys": 97.47
+		},
+		{
+			"sections_dept": "crwr",
+			"sections_pass": 1,
+			"overallAvg": 1,
+			"applyKeys": 98
+		},
+		{
+			"sections_dept": "educ",
+			"sections_pass": 14,
+			"overallAvg": 1,
+			"applyKeys": 97.5
+		},
+		{
+			"sections_dept": "eece",
+			"sections_pass": 12,
+			"overallAvg": 1,
+			"applyKeys": 98.75
+		},
+		{
+			"sections_dept": "epse",
+			"sections_pass": 12,
+			"overallAvg": 1,
+			"applyKeys": 98.08
+		},
+		{
+			"sections_dept": "epse",
+			"sections_pass": 10,
+			"overallAvg": 1,
+			"applyKeys": 98.7
+		},
+		{
+			"sections_dept": "epse",
+			"sections_pass": 22,
+			"overallAvg": 1,
+			"applyKeys": 98.36
+		},
+		{
+			"sections_dept": "epse",
+			"sections_pass": 14,
+			"overallAvg": 1,
+			"applyKeys": 97.29
+		},
+		{
+			"sections_dept": "epse",
+			"sections_pass": 25,
+			"overallAvg": 1,
+			"applyKeys": 98.8
+		},
+		{
+			"sections_dept": "epse",
+			"sections_pass": 17,
+			"overallAvg": 2,
+			"applyKeys": 98.76
+		},
+		{
+			"sections_dept": "epse",
+			"sections_pass": 24,
+			"overallAvg": 1,
+			"applyKeys": 98.58
+		},
+		{
+			"sections_dept": "epse",
+			"sections_pass": 11,
+			"overallAvg": 2,
+			"applyKeys": 98.45
+		},
+		{
+			"sections_dept": "epse",
+			"sections_pass": 9,
+			"overallAvg": 2,
+			"applyKeys": 97.78
+		},
+		{
+			"sections_dept": "epse",
+			"sections_pass": 16,
+			"overallAvg": 1,
+			"applyKeys": 97.69
+		},
+		{
+			"sections_dept": "math",
+			"sections_pass": 4,
+			"overallAvg": 1,
+			"applyKeys": 97.25
+		},
+		{
+			"sections_dept": "math",
+			"sections_pass": 9,
+			"overallAvg": 1,
+			"applyKeys": 99.78
+		},
+		{
+			"sections_dept": "math",
+			"sections_pass": 21,
+			"overallAvg": 1,
+			"applyKeys": 97.48
+		},
+		{
+			"sections_dept": "math",
+			"sections_pass": 11,
+			"overallAvg": 1,
+			"applyKeys": 97.09
+		},
+		{
+			"sections_dept": "nurs",
+			"sections_pass": 14,
+			"overallAvg": 2,
+			"applyKeys": 98.71
+		},
+		{
+			"sections_dept": "nurs",
+			"sections_pass": 17,
+			"overallAvg": 1,
+			"applyKeys": 97.53
+		},
+		{
+			"sections_dept": "nurs",
+			"sections_pass": 16,
+			"overallAvg": 1,
+			"applyKeys": 98.5
+		},
+		{
+			"sections_dept": "nurs",
+			"sections_pass": 12,
+			"overallAvg": 2,
+			"applyKeys": 98.58
+		},
+		{
+			"sections_dept": "spph",
+			"sections_pass": 82,
+			"overallAvg": 1,
+			"applyKeys": 98.98
+		}
+	]
+}

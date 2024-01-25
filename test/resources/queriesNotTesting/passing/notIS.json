@@ -1,0 +1,35 @@
+{
+	"title": "NotIS",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"GT": {
+						"sections_avg": 99
+					}
+				},
+				{
+					"NOT": {
+						"IS": {
+							"sections_dept": "math"
+						}
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_avg"
+			],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "cnps",
+			"sections_avg": 99.19
+		}
+	]
+}

@@ -1,0 +1,71 @@
+{
+	"title": "simpleMax",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_year",
+				"overallMin"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_year"
+			],
+			"APPLY": [
+				{
+					"overallMin": {
+						"MAX": "sections_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_year": 1900,
+			"overallMin": 99.78
+		},
+		{
+			"sections_year": 2007,
+			"overallMin": 97.67
+		},
+		{
+			"sections_year": 2008,
+			"overallMin": 96.94
+		},
+		{
+			"sections_year": 2009,
+			"overallMin": 99.78
+		},
+		{
+			"sections_year": 2010,
+			"overallMin": 98.58
+		},
+		{
+			"sections_year": 2011,
+			"overallMin": 98.71
+		},
+		{
+			"sections_year": 2012,
+			"overallMin": 99.19
+		},
+		{
+			"sections_year": 2013,
+			"overallMin": 98.5
+		},
+		{
+			"sections_year": 2014,
+			"overallMin": 98.8
+		},
+		{
+			"sections_year": 2015,
+			"overallMin": 98.98
+		},
+		{
+			"sections_year": 2016,
+			"overallMin": 97.25
+		}
+	]
+}

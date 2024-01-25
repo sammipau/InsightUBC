@@ -1,0 +1,42 @@
+{
+	"title": "superSimpleRooms",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"rooms_seats": 300
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname"
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"rooms_shortname": "CIRS"
+		},
+		{
+			"rooms_shortname": "ESB"
+		},
+		{
+			"rooms_shortname": "HEBB"
+		},
+		{
+			"rooms_shortname": "LSC"
+		},
+		{
+			"rooms_shortname": "LSC"
+		},
+		{
+			"rooms_shortname": "OSBO"
+		},
+		{
+			"rooms_shortname": "WESB"
+		},
+		{
+			"rooms_shortname": "WOOD"
+		}
+	]
+}

@@ -1,0 +1,27 @@
+{
+	"title": "tooManyColumnApplyKeys",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_title",
+				"overallAvg",
+				"overallCounts"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_title"
+			],
+			"APPLY": [
+				{
+					"overallAvg": {
+						"COUNT": "sections_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

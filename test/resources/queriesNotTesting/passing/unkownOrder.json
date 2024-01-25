@@ -1,0 +1,19 @@
+{
+	"title": "UnkownOrder",
+	"input": {
+		"WHERE": {
+			"LT": {
+				"sections_avg": 3
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_avg"
+			],
+			"ORDER": "asdas"
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

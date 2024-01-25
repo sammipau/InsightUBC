@@ -1,0 +1,783 @@
+{
+	"title": "simpleMin",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"overallMin"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_dept"
+			],
+			"APPLY": [
+				{
+					"overallMin": {
+						"MIN": "sections_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "aanb",
+			"overallMin": 87.83
+		},
+		{
+			"sections_dept": "adhe",
+			"overallMin": 67.5
+		},
+		{
+			"sections_dept": "anat",
+			"overallMin": 80.28
+		},
+		{
+			"sections_dept": "anth",
+			"overallMin": 60.05
+		},
+		{
+			"sections_dept": "apbi",
+			"overallMin": 52.08
+		},
+		{
+			"sections_dept": "appp",
+			"overallMin": 77.99
+		},
+		{
+			"sections_dept": "apsc",
+			"overallMin": 57.68
+		},
+		{
+			"sections_dept": "arbc",
+			"overallMin": 75.4
+		},
+		{
+			"sections_dept": "arch",
+			"overallMin": 73
+		},
+		{
+			"sections_dept": "arcl",
+			"overallMin": 64.5
+		},
+		{
+			"sections_dept": "arst",
+			"overallMin": 73.56
+		},
+		{
+			"sections_dept": "arth",
+			"overallMin": 66.38
+		},
+		{
+			"sections_dept": "asia",
+			"overallMin": 57.33
+		},
+		{
+			"sections_dept": "asic",
+			"overallMin": 71.27
+		},
+		{
+			"sections_dept": "astr",
+			"overallMin": 62.5
+		},
+		{
+			"sections_dept": "astu",
+			"overallMin": 63.14
+		},
+		{
+			"sections_dept": "atsc",
+			"overallMin": 69.25
+		},
+		{
+			"sections_dept": "audi",
+			"overallMin": 62.63
+		},
+		{
+			"sections_dept": "ba",
+			"overallMin": 74.58
+		},
+		{
+			"sections_dept": "baac",
+			"overallMin": 74.39
+		},
+		{
+			"sections_dept": "babs",
+			"overallMin": 75.63
+		},
+		{
+			"sections_dept": "baen",
+			"overallMin": 78.97
+		},
+		{
+			"sections_dept": "bafi",
+			"overallMin": 75.54
+		},
+		{
+			"sections_dept": "bahr",
+			"overallMin": 74.21
+		},
+		{
+			"sections_dept": "bait",
+			"overallMin": 79.75
+		},
+		{
+			"sections_dept": "bala",
+			"overallMin": 71.92
+		},
+		{
+			"sections_dept": "bama",
+			"overallMin": 77.57
+		},
+		{
+			"sections_dept": "bams",
+			"overallMin": 77.2
+		},
+		{
+			"sections_dept": "bapa",
+			"overallMin": 79
+		},
+		{
+			"sections_dept": "basc",
+			"overallMin": 74.42
+		},
+		{
+			"sections_dept": "basm",
+			"overallMin": 77.68
+		},
+		{
+			"sections_dept": "baul",
+			"overallMin": 76.77
+		},
+		{
+			"sections_dept": "bioc",
+			"overallMin": 64.67
+		},
+		{
+			"sections_dept": "biof",
+			"overallMin": 87.33
+		},
+		{
+			"sections_dept": "biol",
+			"overallMin": 55.96
+		},
+		{
+			"sections_dept": "bmeg",
+			"overallMin": 75.76
+		},
+		{
+			"sections_dept": "bota",
+			"overallMin": 83.43
+		},
+		{
+			"sections_dept": "busi",
+			"overallMin": 4
+		},
+		{
+			"sections_dept": "caps",
+			"overallMin": 65.5
+		},
+		{
+			"sections_dept": "ccst",
+			"overallMin": 77.5
+		},
+		{
+			"sections_dept": "ceen",
+			"overallMin": 74.96
+		},
+		{
+			"sections_dept": "cell",
+			"overallMin": 84.29
+		},
+		{
+			"sections_dept": "cens",
+			"overallMin": 68.23
+		},
+		{
+			"sections_dept": "chbe",
+			"overallMin": 42
+		},
+		{
+			"sections_dept": "chem",
+			"overallMin": 42.5
+		},
+		{
+			"sections_dept": "chil",
+			"overallMin": 83
+		},
+		{
+			"sections_dept": "chin",
+			"overallMin": 65
+		},
+		{
+			"sections_dept": "cics",
+			"overallMin": 76.39
+		},
+		{
+			"sections_dept": "civl",
+			"overallMin": 33
+		},
+		{
+			"sections_dept": "clch",
+			"overallMin": 69.76
+		},
+		{
+			"sections_dept": "clst",
+			"overallMin": 62.74
+		},
+		{
+			"sections_dept": "cnps",
+			"overallMin": 70.66
+		},
+		{
+			"sections_dept": "cnrs",
+			"overallMin": 71.3
+		},
+		{
+			"sections_dept": "cnto",
+			"overallMin": 84.59
+		},
+		{
+			"sections_dept": "coec",
+			"overallMin": 73.34
+		},
+		{
+			"sections_dept": "cogs",
+			"overallMin": 66.37
+		},
+		{
+			"sections_dept": "cohr",
+			"overallMin": 72.14
+		},
+		{
+			"sections_dept": "comm",
+			"overallMin": 46.71
+		},
+		{
+			"sections_dept": "cons",
+			"overallMin": 67.64
+		},
+		{
+			"sections_dept": "cpen",
+			"overallMin": 69.41
+		},
+		{
+			"sections_dept": "cpsc",
+			"overallMin": 64
+		},
+		{
+			"sections_dept": "crwr",
+			"overallMin": 72.31
+		},
+		{
+			"sections_dept": "dani",
+			"overallMin": 73.43
+		},
+		{
+			"sections_dept": "dent",
+			"overallMin": 72.75
+		},
+		{
+			"sections_dept": "dhyg",
+			"overallMin": 58.4
+		},
+		{
+			"sections_dept": "eced",
+			"overallMin": 75.25
+		},
+		{
+			"sections_dept": "econ",
+			"overallMin": 60.89
+		},
+		{
+			"sections_dept": "edcp",
+			"overallMin": 76.18
+		},
+		{
+			"sections_dept": "edst",
+			"overallMin": 78.18
+		},
+		{
+			"sections_dept": "educ",
+			"overallMin": 39.03
+		},
+		{
+			"sections_dept": "eece",
+			"overallMin": 72.76
+		},
+		{
+			"sections_dept": "elec",
+			"overallMin": 52.67
+		},
+		{
+			"sections_dept": "ends",
+			"overallMin": 71.17
+		},
+		{
+			"sections_dept": "engl",
+			"overallMin": 53.5
+		},
+		{
+			"sections_dept": "enph",
+			"overallMin": 58
+		},
+		{
+			"sections_dept": "envr",
+			"overallMin": 72.6
+		},
+		{
+			"sections_dept": "eosc",
+			"overallMin": 57
+		},
+		{
+			"sections_dept": "epse",
+			"overallMin": 65.55
+		},
+		{
+			"sections_dept": "etec",
+			"overallMin": 78.55
+		},
+		{
+			"sections_dept": "fhis",
+			"overallMin": 75.63
+		},
+		{
+			"sections_dept": "fipr",
+			"overallMin": 70.3
+		},
+		{
+			"sections_dept": "fish",
+			"overallMin": 78
+		},
+		{
+			"sections_dept": "fist",
+			"overallMin": 67.11
+		},
+		{
+			"sections_dept": "fmst",
+			"overallMin": 61.97
+		},
+		{
+			"sections_dept": "fnel",
+			"overallMin": 73
+		},
+		{
+			"sections_dept": "fnh",
+			"overallMin": 65.44
+		},
+		{
+			"sections_dept": "fnis",
+			"overallMin": 72.18
+		},
+		{
+			"sections_dept": "food",
+			"overallMin": 72.07
+		},
+		{
+			"sections_dept": "fopr",
+			"overallMin": 4.5
+		},
+		{
+			"sections_dept": "fre",
+			"overallMin": 57.2
+		},
+		{
+			"sections_dept": "fren",
+			"overallMin": 61.36
+		},
+		{
+			"sections_dept": "frst",
+			"overallMin": 0
+		},
+		{
+			"sections_dept": "gbpr",
+			"overallMin": 84.8
+		},
+		{
+			"sections_dept": "geob",
+			"overallMin": 62.81
+		},
+		{
+			"sections_dept": "geog",
+			"overallMin": 62.22
+		},
+		{
+			"sections_dept": "germ",
+			"overallMin": 59.61
+		},
+		{
+			"sections_dept": "gpp",
+			"overallMin": 80.16
+		},
+		{
+			"sections_dept": "grek",
+			"overallMin": 70.4
+		},
+		{
+			"sections_dept": "grsj",
+			"overallMin": 64.67
+		},
+		{
+			"sections_dept": "gsat",
+			"overallMin": 84.9
+		},
+		{
+			"sections_dept": "hebr",
+			"overallMin": 65.58
+		},
+		{
+			"sections_dept": "hgse",
+			"overallMin": 78
+		},
+		{
+			"sections_dept": "hinu",
+			"overallMin": 76.09
+		},
+		{
+			"sections_dept": "hist",
+			"overallMin": 34
+		},
+		{
+			"sections_dept": "hunu",
+			"overallMin": 81.6
+		},
+		{
+			"sections_dept": "iar",
+			"overallMin": 80
+		},
+		{
+			"sections_dept": "igen",
+			"overallMin": 68.06
+		},
+		{
+			"sections_dept": "info",
+			"overallMin": 85.4
+		},
+		{
+			"sections_dept": "isci",
+			"overallMin": 75.79
+		},
+		{
+			"sections_dept": "ital",
+			"overallMin": 61
+		},
+		{
+			"sections_dept": "itst",
+			"overallMin": 68.4
+		},
+		{
+			"sections_dept": "iwme",
+			"overallMin": 84
+		},
+		{
+			"sections_dept": "japn",
+			"overallMin": 54.81
+		},
+		{
+			"sections_dept": "jrnl",
+			"overallMin": 74.5
+		},
+		{
+			"sections_dept": "kin",
+			"overallMin": 61.45
+		},
+		{
+			"sections_dept": "korn",
+			"overallMin": 65.75
+		},
+		{
+			"sections_dept": "lais",
+			"overallMin": 86.33
+		},
+		{
+			"sections_dept": "larc",
+			"overallMin": 73.56
+		},
+		{
+			"sections_dept": "laso",
+			"overallMin": 68.53
+		},
+		{
+			"sections_dept": "last",
+			"overallMin": 65.9
+		},
+		{
+			"sections_dept": "latn",
+			"overallMin": 60.67
+		},
+		{
+			"sections_dept": "law",
+			"overallMin": 65.64
+		},
+		{
+			"sections_dept": "lfs",
+			"overallMin": 0
+		},
+		{
+			"sections_dept": "libe",
+			"overallMin": 78.72
+		},
+		{
+			"sections_dept": "libr",
+			"overallMin": 74.07
+		},
+		{
+			"sections_dept": "ling",
+			"overallMin": 59.06
+		},
+		{
+			"sections_dept": "lled",
+			"overallMin": 47.29
+		},
+		{
+			"sections_dept": "math",
+			"overallMin": 46.52
+		},
+		{
+			"sections_dept": "mdvl",
+			"overallMin": 69.28
+		},
+		{
+			"sections_dept": "mech",
+			"overallMin": 53.86
+		},
+		{
+			"sections_dept": "medg",
+			"overallMin": 54.43
+		},
+		{
+			"sections_dept": "medi",
+			"overallMin": 78.6
+		},
+		{
+			"sections_dept": "micb",
+			"overallMin": 63.59
+		},
+		{
+			"sections_dept": "midw",
+			"overallMin": 79.22
+		},
+		{
+			"sections_dept": "mine",
+			"overallMin": 65.12
+		},
+		{
+			"sections_dept": "mrne",
+			"overallMin": 78.17
+		},
+		{
+			"sections_dept": "mtrl",
+			"overallMin": 57.4
+		},
+		{
+			"sections_dept": "musc",
+			"overallMin": 58.33
+		},
+		{
+			"sections_dept": "name",
+			"overallMin": 77.62
+		},
+		{
+			"sections_dept": "nest",
+			"overallMin": 65.67
+		},
+		{
+			"sections_dept": "nrsc",
+			"overallMin": 68
+		},
+		{
+			"sections_dept": "nurs",
+			"overallMin": 70
+		},
+		{
+			"sections_dept": "obst",
+			"overallMin": 62.5
+		},
+		{
+			"sections_dept": "onco",
+			"overallMin": 83.45
+		},
+		{
+			"sections_dept": "path",
+			"overallMin": 73.47
+		},
+		{
+			"sections_dept": "pcth",
+			"overallMin": 62.33
+		},
+		{
+			"sections_dept": "pers",
+			"overallMin": 67.78
+		},
+		{
+			"sections_dept": "phar",
+			"overallMin": 51.25
+		},
+		{
+			"sections_dept": "phil",
+			"overallMin": 33.2
+		},
+		{
+			"sections_dept": "phrm",
+			"overallMin": 70.11
+		},
+		{
+			"sections_dept": "phth",
+			"overallMin": 81.32
+		},
+		{
+			"sections_dept": "phys",
+			"overallMin": 55.25
+		},
+		{
+			"sections_dept": "plan",
+			"overallMin": 78.51
+		},
+		{
+			"sections_dept": "poli",
+			"overallMin": 54.01
+		},
+		{
+			"sections_dept": "pols",
+			"overallMin": 77.36
+		},
+		{
+			"sections_dept": "port",
+			"overallMin": 67.73
+		},
+		{
+			"sections_dept": "psyc",
+			"overallMin": 43.33
+		},
+		{
+			"sections_dept": "punj",
+			"overallMin": 64.89
+		},
+		{
+			"sections_dept": "relg",
+			"overallMin": 65.38
+		},
+		{
+			"sections_dept": "rgla",
+			"overallMin": 67.43
+		},
+		{
+			"sections_dept": "rhsc",
+			"overallMin": 68.5
+		},
+		{
+			"sections_dept": "rmes",
+			"overallMin": 74.33
+		},
+		{
+			"sections_dept": "rmst",
+			"overallMin": 61.21
+		},
+		{
+			"sections_dept": "rsot",
+			"overallMin": 77.98
+		},
+		{
+			"sections_dept": "russ",
+			"overallMin": 64.13
+		},
+		{
+			"sections_dept": "sans",
+			"overallMin": 70.69
+		},
+		{
+			"sections_dept": "scan",
+			"overallMin": 76.63
+		},
+		{
+			"sections_dept": "scie",
+			"overallMin": 65.81
+		},
+		{
+			"sections_dept": "soci",
+			"overallMin": 65.07
+		},
+		{
+			"sections_dept": "soil",
+			"overallMin": 73.38
+		},
+		{
+			"sections_dept": "sowk",
+			"overallMin": 72.95
+		},
+		{
+			"sections_dept": "span",
+			"overallMin": 61.03
+		},
+		{
+			"sections_dept": "spha",
+			"overallMin": 74.57
+		},
+		{
+			"sections_dept": "spph",
+			"overallMin": 66.8
+		},
+		{
+			"sections_dept": "stat",
+			"overallMin": 60.6
+		},
+		{
+			"sections_dept": "sts",
+			"overallMin": 85.57
+		},
+		{
+			"sections_dept": "surg",
+			"overallMin": 60.25
+		},
+		{
+			"sections_dept": "swed",
+			"overallMin": 77.88
+		},
+		{
+			"sections_dept": "test",
+			"overallMin": 60
+		},
+		{
+			"sections_dept": "thtr",
+			"overallMin": 63.78
+		},
+		{
+			"sections_dept": "udes",
+			"overallMin": 76.43
+		},
+		{
+			"sections_dept": "ufor",
+			"overallMin": 79.7
+		},
+		{
+			"sections_dept": "urst",
+			"overallMin": 69.34
+		},
+		{
+			"sections_dept": "ursy",
+			"overallMin": 77.89
+		},
+		{
+			"sections_dept": "vant",
+			"overallMin": 56.77
+		},
+		{
+			"sections_dept": "visa",
+			"overallMin": 65.5
+		},
+		{
+			"sections_dept": "wood",
+			"overallMin": 1
+		},
+		{
+			"sections_dept": "wrds",
+			"overallMin": 53.64
+		},
+		{
+			"sections_dept": "zool",
+			"overallMin": 83.67
+		}
+	]
+}

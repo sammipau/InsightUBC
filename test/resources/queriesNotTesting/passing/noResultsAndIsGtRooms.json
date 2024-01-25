@@ -1,0 +1,26 @@
+{
+	"title": "noResultsAndIsGtRooms",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"rooms_furniture": "Table"
+					}
+				},
+				{
+					"GT": {
+						"rooms_seats": 300
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname"
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": []
+}

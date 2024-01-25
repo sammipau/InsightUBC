@@ -1,0 +1,35 @@
+{
+	"title": "roomsShortNameSimple",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"rooms_shortname": "BIOL"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"rooms_lat"
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"rooms_shortname": "BIOL",
+			"rooms_lat": 49.26479
+		},
+		{
+			"rooms_shortname": "BIOL",
+			"rooms_lat": 49.26479
+		},
+		{
+			"rooms_shortname": "BIOL",
+			"rooms_lat": 49.26479
+		},
+		{
+			"rooms_shortname": "BIOL",
+			"rooms_lat": 49.26479
+		}
+	]
+}

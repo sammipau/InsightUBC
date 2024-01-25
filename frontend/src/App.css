@@ -1,0 +1,160 @@
+	/* Add this CSS class to style the selected dataset item */
+	.dataset-item.selected {
+		background-color: #ccc; /* Set the background color to grey or your desired tint */
+	}
+
+	/* Rest of your existing CSS */
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100vh; /* Adjust the height as needed */
+	}
+
+	.header {
+		display: flex;
+		justify-content: center;
+		text-align: left; /* Align header text to the left */
+	}
+
+	.inputHeaders {
+		display: grid;
+		grid-template-columns: 300px repeat(3, 1fr); /* Adjust the width of column 1 and span columns 2, 3, 4 */
+		gap: 10px; /* Adjust the gap between columns */
+		text-align: center;
+		margin-bottom: 20px; /* Add some margin to separate the form and text-box */
+	}
+
+	.dataset-container {
+		grid-column: span 4; /* Span all four columns */
+		border: 1px solid #ccc;
+		padding: 10px;
+		height: 200px; /* Set an initial height for the dataset container */
+		max-height: 200px; /* Set a maximum height for the dataset container */
+		overflow-y: auto; /* Enable vertical scroll if content exceeds the height */
+	}
+
+	.dataset-list {
+		display: flex;
+		flex-direction: column; /* Display datasets in a column */
+		gap: 0; /* Eliminate the margin between each dataset */
+		width: 300px;
+		max-width: 300px;
+	}
+
+	.dataset-item {
+		border: 1px solid #ccc;
+		padding: 5px;
+		cursor: pointer;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		width: 278px;
+		max-width: 300px; /* Set a fixed width for the dataset items */
+		box-sizing: border-box; /* Include padding and border in the element's total width and height */
+	}
+
+	.filterForm {
+		grid-column: span 2; /* Span two columns */
+		margin-right: 5px;
+	}
+
+	.centered {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.text-box-centered {
+		flex: 5; /* Use remaining vertical space */
+		height: 500px;
+		border: 1px solid #ccc; /* Optional: Add a border for visibility */
+		padding: 20px; /* Optional: Add padding for better appearance */
+		width: 1300px;
+		margin: 0 auto; /* Center horizontally */
+		overflow: auto;
+		word-wrap: break-word;
+	}
+
+	.HalfWidthHeightDataset-Container {
+		grid-column: span 4; /* Span all four columns */
+		border: 1px solid #ccc;
+		padding: 10px;
+		height: 150px; /* Set an initial height for the dataset container */
+		width: 300px;
+		max-height: 200px; /* Set a maximum height for the dataset container */
+		overflow-y: auto; /* Enable vertical scroll if content exceeds the height */
+	}
+
+	.Doubledataset-container {
+		grid-column: span 4; /* Span all four columns */
+		border: 1px solid #ccc;
+		height: 170px; /* Set an initial height for the dataset container */
+		width: 200%; /* Set width to 100% to avoid affecting other columns */
+		max-width: 700px;
+		max-height: 200px; /* Set a maximum height for the dataset container */
+		display: grid;
+		grid-template-columns: auto auto auto;
+	}
+	.grid-itemtop {
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+		height: 35px;
+	}
+	.grid-item {
+		border: 1px solid #ccc;
+		box-sizing: content-box;
+		height: 135px;
+	}
+
+	.BigWideContainer {
+		grid-column: span 4; /* Span all four columns */
+		border: 1px solid #ccc;
+		padding: 10px;
+		height: 83px; /* Set an initial height for the big and wide container */
+		width: 263%; /* Span the entire width of the grid */
+		max-height: 300px; /* Set a maximum height for the big and wide container */
+		overflow-y: auto; /* Enable vertical scroll if content exceeds the height */
+		margin-top: 10px;
+	}
+	.big-textbox {
+		width: 100%; /* Make the textarea take the full width of the container */
+		height: 80px; /* Make the textarea take the full height of the container */
+		border: none; /* Remove border for a cleaner appearance */
+		resize: none; /* Disable textarea resizing */
+		font-size: 16px; /* Adjust font size as needed */
+	}
+
+	.checkbox-label {
+		display: block;
+		margin-bottom: 6px; /* Adjust as needed for spacing between labels */
+		text-align: left;
+	}
+	.PerformQuery {
+		position: absolute; /* Set the position of the button to absolute */
+		top: 331px; /* Adjust the top position as needed */
+		right: 90px; /* Adjust the right position as needed */
+		height: 104px;
+		width: 100px;
+	}
+	.column{
+		max-width: 325px;
+	}
+	.small-textbox {
+		width: 95%; /* Make the textarea take the full width of the container */
+		height: 120px; /* Make the textarea take the full height of the container */
+		border: none; /* Remove border for a cleaner appearance */
+		resize: none; /* Disable textarea resizing */
+		font-size: 16px; /* Adjust font size as needed */
+	}
+	.grid-itemColumnOptions {
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+		height: 135px;
+		overflow-y: auto; /* Enable vertical scroll if content exceeds the height */
+	}
+	.radiobox {
+		display: block;
+		margin-bottom: 6px; /* Adjust as needed for spacing between labels */
+		text-align: left;
+	}

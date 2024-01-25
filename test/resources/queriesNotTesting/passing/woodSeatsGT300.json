@@ -1,0 +1,32 @@
+{
+	"title": "woodSeatsGT300",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"rooms_shortname": "WOOD"
+					}
+				},
+				{
+					"GT": {
+						"rooms_seats": 300
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"rooms_seats"
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"rooms_shortname": "WOOD",
+			"rooms_seats": 503
+		}
+	]
+}

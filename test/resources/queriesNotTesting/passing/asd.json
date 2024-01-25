@@ -1,0 +1,59 @@
+{
+	"title": "asd",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"AND": [
+						{
+							"GT": {
+								"sections_avg": 90.9
+							}
+						},
+						{
+							"IS": {
+								"sections_dept": "a*"
+							}
+						}
+					]
+				},
+				{
+					"LT": {
+						"sections_avg": 91
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_id",
+				"sections_avg"
+			],
+			"ORDER": "sections_id"
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "anth",
+			"sections_id": "500",
+			"sections_avg": 90.92
+		},
+		{
+			"sections_dept": "anth",
+			"sections_id": "500",
+			"sections_avg": 90.92
+		},
+		{
+			"sections_dept": "audi",
+			"sections_id": "575",
+			"sections_avg": 90.95
+		},
+		{
+			"sections_dept": "audi",
+			"sections_id": "575",
+			"sections_avg": 90.95
+		}
+	]
+}

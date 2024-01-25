@@ -1,0 +1,71 @@
+{
+	"title": "testYear",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_year",
+				"overallMin"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_year"
+			],
+			"APPLY": [
+				{
+					"overallMin": {
+						"MAX": "sections_fail"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_year": 1900,
+			"overallMin": 287
+		},
+		{
+			"sections_year": 2007,
+			"overallMin": 196
+		},
+		{
+			"sections_year": 2008,
+			"overallMin": 128
+		},
+		{
+			"sections_year": 2009,
+			"overallMin": 106
+		},
+		{
+			"sections_year": 2010,
+			"overallMin": 78
+		},
+		{
+			"sections_year": 2011,
+			"overallMin": 66
+		},
+		{
+			"sections_year": 2012,
+			"overallMin": 122
+		},
+		{
+			"sections_year": 2013,
+			"overallMin": 74
+		},
+		{
+			"sections_year": 2014,
+			"overallMin": 72
+		},
+		{
+			"sections_year": 2015,
+			"overallMin": 95
+		},
+		{
+			"sections_year": 2016,
+			"overallMin": 58
+		}
+	]
+}

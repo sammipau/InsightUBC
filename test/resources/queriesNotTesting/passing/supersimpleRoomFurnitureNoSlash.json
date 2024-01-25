@@ -1,0 +1,151 @@
+{
+	"title": "supersimpleRoomFurnitureNoSlash",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"rooms_furniture": "Classroom-Fixed Tablets"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"rooms_lat"
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"rooms_shortname": "AERL",
+			"rooms_lat": 49.26372
+		},
+		{
+			"rooms_shortname": "BIOL",
+			"rooms_lat": 49.26479
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_lat": 49.26826
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_lat": 49.26826
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_lat": 49.26826
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_lat": 49.26826
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_lat": 49.26826
+		},
+		{
+			"rooms_shortname": "CIRS",
+			"rooms_lat": 49.26207
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"rooms_lat": 49.2659
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"rooms_lat": 49.2659
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"rooms_lat": 49.2659
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"rooms_lat": 49.2659
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"rooms_lat": 49.2659
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"rooms_lat": 49.2659
+		},
+		{
+			"rooms_shortname": "ESB",
+			"rooms_lat": 49.26274
+		},
+		{
+			"rooms_shortname": "FNH",
+			"rooms_lat": 49.26414
+		},
+		{
+			"rooms_shortname": "FSC",
+			"rooms_lat": 49.26044
+		},
+		{
+			"rooms_shortname": "FSC",
+			"rooms_lat": 49.26044
+		},
+		{
+			"rooms_shortname": "LASR",
+			"rooms_lat": 49.26767
+		},
+		{
+			"rooms_shortname": "LASR",
+			"rooms_lat": 49.26767
+		},
+		{
+			"rooms_shortname": "GEOG",
+			"rooms_lat": 49.26605
+		},
+		{
+			"rooms_shortname": "HENN",
+			"rooms_lat": 49.26627
+		},
+		{
+			"rooms_shortname": "HENN",
+			"rooms_lat": 49.26627
+		},
+		{
+			"rooms_shortname": "HENN",
+			"rooms_lat": 49.26627
+		},
+		{
+			"rooms_shortname": "MCML",
+			"rooms_lat": 49.26114
+		},
+		{
+			"rooms_shortname": "MCML",
+			"rooms_lat": 49.26114
+		},
+		{
+			"rooms_shortname": "MATH",
+			"rooms_lat": 49.266463
+		},
+		{
+			"rooms_shortname": "MATX",
+			"rooms_lat": 49.266089
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"rooms_lat": 49.26398
+		},
+		{
+			"rooms_shortname": "WESB",
+			"rooms_lat": 49.26517
+		},
+		{
+			"rooms_shortname": "WESB",
+			"rooms_lat": 49.26517
+		},
+		{
+			"rooms_shortname": "WOOD",
+			"rooms_lat": 49.26478
+		},
+		{
+			"rooms_shortname": "WOOD",
+			"rooms_lat": 49.26478
+		}
+	]
+}

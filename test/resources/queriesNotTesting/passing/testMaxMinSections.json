@@ -1,0 +1,978 @@
+{
+	"title": "testMaxMinSections",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"maxLon",
+				"minLat"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_dept"
+			],
+			"APPLY": [
+				{
+					"maxLon": {
+						"MAX": "sections_avg"
+					}
+				},
+				{
+					"minLat": {
+						"MIN": "sections_pass"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "aanb",
+			"maxLon": 94.44,
+			"minLat": 6
+		},
+		{
+			"sections_dept": "adhe",
+			"maxLon": 96.11,
+			"minLat": 7
+		},
+		{
+			"sections_dept": "anat",
+			"maxLon": 92,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "anth",
+			"maxLon": 92.29,
+			"minLat": 3
+		},
+		{
+			"sections_dept": "apbi",
+			"maxLon": 91.86,
+			"minLat": 2
+		},
+		{
+			"sections_dept": "appp",
+			"maxLon": 85.16,
+			"minLat": 42
+		},
+		{
+			"sections_dept": "apsc",
+			"maxLon": 96,
+			"minLat": 5
+		},
+		{
+			"sections_dept": "arbc",
+			"maxLon": 83.13,
+			"minLat": 8
+		},
+		{
+			"sections_dept": "arch",
+			"maxLon": 90,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "arcl",
+			"maxLon": 80.82,
+			"minLat": 7
+		},
+		{
+			"sections_dept": "arst",
+			"maxLon": 96.94,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "arth",
+			"maxLon": 93,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "asia",
+			"maxLon": 86.24,
+			"minLat": 6
+		},
+		{
+			"sections_dept": "asic",
+			"maxLon": 80.79,
+			"minLat": 5
+		},
+		{
+			"sections_dept": "astr",
+			"maxLon": 91.4,
+			"minLat": 3
+		},
+		{
+			"sections_dept": "astu",
+			"maxLon": 83.14,
+			"minLat": 6
+		},
+		{
+			"sections_dept": "atsc",
+			"maxLon": 92,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "audi",
+			"maxLon": 96.9,
+			"minLat": 8
+		},
+		{
+			"sections_dept": "ba",
+			"maxLon": 87.24,
+			"minLat": 12
+		},
+		{
+			"sections_dept": "baac",
+			"maxLon": 86.81,
+			"minLat": 7
+		},
+		{
+			"sections_dept": "babs",
+			"maxLon": 91.38,
+			"minLat": 7
+		},
+		{
+			"sections_dept": "baen",
+			"maxLon": 87.13,
+			"minLat": 13
+		},
+		{
+			"sections_dept": "bafi",
+			"maxLon": 89.43,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "bahr",
+			"maxLon": 86.7,
+			"minLat": 9
+		},
+		{
+			"sections_dept": "bait",
+			"maxLon": 86.83,
+			"minLat": 8
+		},
+		{
+			"sections_dept": "bala",
+			"maxLon": 83.2,
+			"minLat": 9
+		},
+		{
+			"sections_dept": "bama",
+			"maxLon": 87.7,
+			"minLat": 5
+		},
+		{
+			"sections_dept": "bams",
+			"maxLon": 91.47,
+			"minLat": 7
+		},
+		{
+			"sections_dept": "bapa",
+			"maxLon": 85.4,
+			"minLat": 12
+		},
+		{
+			"sections_dept": "basc",
+			"maxLon": 86.04,
+			"minLat": 10
+		},
+		{
+			"sections_dept": "basm",
+			"maxLon": 87.56,
+			"minLat": 6
+		},
+		{
+			"sections_dept": "baul",
+			"maxLon": 85.62,
+			"minLat": 20
+		},
+		{
+			"sections_dept": "bioc",
+			"maxLon": 90.57,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "biof",
+			"maxLon": 93.45,
+			"minLat": 3
+		},
+		{
+			"sections_dept": "biol",
+			"maxLon": 94.33,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "bmeg",
+			"maxLon": 95.15,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "bota",
+			"maxLon": 92,
+			"minLat": 3
+		},
+		{
+			"sections_dept": "busi",
+			"maxLon": 88.88,
+			"minLat": 0
+		},
+		{
+			"sections_dept": "caps",
+			"maxLon": 89.8,
+			"minLat": 7
+		},
+		{
+			"sections_dept": "ccst",
+			"maxLon": 93.67,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "ceen",
+			"maxLon": 94.27,
+			"minLat": 3
+		},
+		{
+			"sections_dept": "cell",
+			"maxLon": 94.4,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "cens",
+			"maxLon": 87.87,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "chbe",
+			"maxLon": 95.54,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "chem",
+			"maxLon": 92.57,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "chil",
+			"maxLon": 92,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "chin",
+			"maxLon": 86.13,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "cics",
+			"maxLon": 89.68,
+			"minLat": 19
+		},
+		{
+			"sections_dept": "civl",
+			"maxLon": 96.27,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "clch",
+			"maxLon": 79.5,
+			"minLat": 6
+		},
+		{
+			"sections_dept": "clst",
+			"maxLon": 88.4,
+			"minLat": 5
+		},
+		{
+			"sections_dept": "cnps",
+			"maxLon": 99.19,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "cnrs",
+			"maxLon": 89.13,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "cnto",
+			"maxLon": 89.42,
+			"minLat": 3
+		},
+		{
+			"sections_dept": "coec",
+			"maxLon": 82.77,
+			"minLat": 20
+		},
+		{
+			"sections_dept": "cogs",
+			"maxLon": 89.33,
+			"minLat": 6
+		},
+		{
+			"sections_dept": "cohr",
+			"maxLon": 90.46,
+			"minLat": 11
+		},
+		{
+			"sections_dept": "comm",
+			"maxLon": 94.75,
+			"minLat": 3
+		},
+		{
+			"sections_dept": "cons",
+			"maxLon": 90.39,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "cpen",
+			"maxLon": 86.9,
+			"minLat": 9
+		},
+		{
+			"sections_dept": "cpsc",
+			"maxLon": 95,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "crwr",
+			"maxLon": 98,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "dani",
+			"maxLon": 89.27,
+			"minLat": 3
+		},
+		{
+			"sections_dept": "dent",
+			"maxLon": 94.33,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "dhyg",
+			"maxLon": 93.72,
+			"minLat": 3
+		},
+		{
+			"sections_dept": "eced",
+			"maxLon": 93.72,
+			"minLat": 9
+		},
+		{
+			"sections_dept": "econ",
+			"maxLon": 95,
+			"minLat": 2
+		},
+		{
+			"sections_dept": "edcp",
+			"maxLon": 95.58,
+			"minLat": 5
+		},
+		{
+			"sections_dept": "edst",
+			"maxLon": 96.46,
+			"minLat": 2
+		},
+		{
+			"sections_dept": "educ",
+			"maxLon": 97.5,
+			"minLat": 3
+		},
+		{
+			"sections_dept": "eece",
+			"maxLon": 98.75,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "elec",
+			"maxLon": 93.93,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "ends",
+			"maxLon": 87.17,
+			"minLat": 9
+		},
+		{
+			"sections_dept": "engl",
+			"maxLon": 89.68,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "enph",
+			"maxLon": 85.69,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "envr",
+			"maxLon": 89.17,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "eosc",
+			"maxLon": 93.47,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "epse",
+			"maxLon": 98.8,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "etec",
+			"maxLon": 96.47,
+			"minLat": 5
+		},
+		{
+			"sections_dept": "fhis",
+			"maxLon": 79.89,
+			"minLat": 9
+		},
+		{
+			"sections_dept": "fipr",
+			"maxLon": 96.4,
+			"minLat": 8
+		},
+		{
+			"sections_dept": "fish",
+			"maxLon": 94,
+			"minLat": 2
+		},
+		{
+			"sections_dept": "fist",
+			"maxLon": 85.38,
+			"minLat": 7
+		},
+		{
+			"sections_dept": "fmst",
+			"maxLon": 86,
+			"minLat": 7
+		},
+		{
+			"sections_dept": "fnel",
+			"maxLon": 87.5,
+			"minLat": 5
+		},
+		{
+			"sections_dept": "fnh",
+			"maxLon": 93.05,
+			"minLat": 3
+		},
+		{
+			"sections_dept": "fnis",
+			"maxLon": 84.78,
+			"minLat": 9
+		},
+		{
+			"sections_dept": "food",
+			"maxLon": 90.68,
+			"minLat": 5
+		},
+		{
+			"sections_dept": "fopr",
+			"maxLon": 91,
+			"minLat": 0
+		},
+		{
+			"sections_dept": "fre",
+			"maxLon": 88.47,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "fren",
+			"maxLon": 88.5,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "frst",
+			"maxLon": 96.36,
+			"minLat": 0
+		},
+		{
+			"sections_dept": "gbpr",
+			"maxLon": 85,
+			"minLat": 5
+		},
+		{
+			"sections_dept": "geob",
+			"maxLon": 88.17,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "geog",
+			"maxLon": 90,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "germ",
+			"maxLon": 92.25,
+			"minLat": 2
+		},
+		{
+			"sections_dept": "gpp",
+			"maxLon": 93.04,
+			"minLat": 5
+		},
+		{
+			"sections_dept": "grek",
+			"maxLon": 84.43,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "grsj",
+			"maxLon": 90,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "gsat",
+			"maxLon": 90.29,
+			"minLat": 7
+		},
+		{
+			"sections_dept": "hebr",
+			"maxLon": 83.57,
+			"minLat": 5
+		},
+		{
+			"sections_dept": "hgse",
+			"maxLon": 95.29,
+			"minLat": 14
+		},
+		{
+			"sections_dept": "hinu",
+			"maxLon": 93.22,
+			"minLat": 6
+		},
+		{
+			"sections_dept": "hist",
+			"maxLon": 93,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "hunu",
+			"maxLon": 91.33,
+			"minLat": 3
+		},
+		{
+			"sections_dept": "iar",
+			"maxLon": 87.5,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "igen",
+			"maxLon": 89.06,
+			"minLat": 10
+		},
+		{
+			"sections_dept": "info",
+			"maxLon": 85.4,
+			"minLat": 40
+		},
+		{
+			"sections_dept": "isci",
+			"maxLon": 90.44,
+			"minLat": 13
+		},
+		{
+			"sections_dept": "ital",
+			"maxLon": 91.5,
+			"minLat": 3
+		},
+		{
+			"sections_dept": "itst",
+			"maxLon": 93,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "iwme",
+			"maxLon": 84,
+			"minLat": 23
+		},
+		{
+			"sections_dept": "japn",
+			"maxLon": 86.95,
+			"minLat": 5
+		},
+		{
+			"sections_dept": "jrnl",
+			"maxLon": 89.93,
+			"minLat": 11
+		},
+		{
+			"sections_dept": "kin",
+			"maxLon": 96.06,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "korn",
+			"maxLon": 84,
+			"minLat": 3
+		},
+		{
+			"sections_dept": "lais",
+			"maxLon": 86.71,
+			"minLat": 6
+		},
+		{
+			"sections_dept": "larc",
+			"maxLon": 92.8,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "laso",
+			"maxLon": 78.72,
+			"minLat": 65
+		},
+		{
+			"sections_dept": "last",
+			"maxLon": 84.58,
+			"minLat": 8
+		},
+		{
+			"sections_dept": "latn",
+			"maxLon": 84.29,
+			"minLat": 6
+		},
+		{
+			"sections_dept": "law",
+			"maxLon": 86.6,
+			"minLat": 2
+		},
+		{
+			"sections_dept": "lfs",
+			"maxLon": 90.83,
+			"minLat": 0
+		},
+		{
+			"sections_dept": "libe",
+			"maxLon": 92.26,
+			"minLat": 12
+		},
+		{
+			"sections_dept": "libr",
+			"maxLon": 96.1,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "ling",
+			"maxLon": 92.25,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "lled",
+			"maxLon": 93.2,
+			"minLat": 3
+		},
+		{
+			"sections_dept": "math",
+			"maxLon": 99.78,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "mdvl",
+			"maxLon": 77.39,
+			"minLat": 28
+		},
+		{
+			"sections_dept": "mech",
+			"maxLon": 93.5,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "medg",
+			"maxLon": 94.7,
+			"minLat": 2
+		},
+		{
+			"sections_dept": "medi",
+			"maxLon": 93.5,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "micb",
+			"maxLon": 94.17,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "midw",
+			"maxLon": 96.5,
+			"minLat": 6
+		},
+		{
+			"sections_dept": "mine",
+			"maxLon": 96.59,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "mrne",
+			"maxLon": 89.4,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "mtrl",
+			"maxLon": 96.25,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "musc",
+			"maxLon": 96.5,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "name",
+			"maxLon": 91.57,
+			"minLat": 11
+		},
+		{
+			"sections_dept": "nest",
+			"maxLon": 87.5,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "nrsc",
+			"maxLon": 90.67,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "nurs",
+			"maxLon": 98.71,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "obst",
+			"maxLon": 95,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "onco",
+			"maxLon": 93.07,
+			"minLat": 9
+		},
+		{
+			"sections_dept": "path",
+			"maxLon": 93.5,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "pcth",
+			"maxLon": 96,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "pers",
+			"maxLon": 89.25,
+			"minLat": 3
+		},
+		{
+			"sections_dept": "phar",
+			"maxLon": 95.07,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "phil",
+			"maxLon": 96,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "phrm",
+			"maxLon": 94.23,
+			"minLat": 17
+		},
+		{
+			"sections_dept": "phth",
+			"maxLon": 95.37,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "phys",
+			"maxLon": 95.43,
+			"minLat": 3
+		},
+		{
+			"sections_dept": "plan",
+			"maxLon": 96.47,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "poli",
+			"maxLon": 86,
+			"minLat": 7
+		},
+		{
+			"sections_dept": "pols",
+			"maxLon": 88.3,
+			"minLat": 5
+		},
+		{
+			"sections_dept": "port",
+			"maxLon": 90,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "psyc",
+			"maxLon": 97,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "punj",
+			"maxLon": 89.08,
+			"minLat": 5
+		},
+		{
+			"sections_dept": "relg",
+			"maxLon": 84.6,
+			"minLat": 5
+		},
+		{
+			"sections_dept": "rgla",
+			"maxLon": 80.58,
+			"minLat": 5
+		},
+		{
+			"sections_dept": "rhsc",
+			"maxLon": 95,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "rmes",
+			"maxLon": 89.25,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "rmst",
+			"maxLon": 79,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "rsot",
+			"maxLon": 91.7,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "russ",
+			"maxLon": 92.3,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "sans",
+			"maxLon": 92.5,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "scan",
+			"maxLon": 86.35,
+			"minLat": 7
+		},
+		{
+			"sections_dept": "scie",
+			"maxLon": 86.81,
+			"minLat": 9
+		},
+		{
+			"sections_dept": "soci",
+			"maxLon": 88.71,
+			"minLat": 4
+		},
+		{
+			"sections_dept": "soil",
+			"maxLon": 91.43,
+			"minLat": 3
+		},
+		{
+			"sections_dept": "sowk",
+			"maxLon": 96.15,
+			"minLat": 3
+		},
+		{
+			"sections_dept": "span",
+			"maxLon": 93.25,
+			"minLat": 2
+		},
+		{
+			"sections_dept": "spha",
+			"maxLon": 89.76,
+			"minLat": 23
+		},
+		{
+			"sections_dept": "spph",
+			"maxLon": 98.98,
+			"minLat": 3
+		},
+		{
+			"sections_dept": "stat",
+			"maxLon": 94.7,
+			"minLat": 1
+		},
+		{
+			"sections_dept": "sts",
+			"maxLon": 90,
+			"minLat": 5
+		},
+		{
+			"sections_dept": "surg",
+			"maxLon": 94.25,
+			"minLat": 3
+		},
+		{
+			"sections_dept": "swed",
+			"maxLon": 84.92,
+			"minLat": 12
+		},
+		{
+			"sections_dept": "test",
+			"maxLon": 60,
+			"minLat": 3
+		},
+		{
+			"sections_dept": "thtr",
+			"maxLon": 95.2,
+			"minLat": 2
+		},
+		{
+			"sections_dept": "udes",
+			"maxLon": 89.5,
+			"minLat": 13
+		},
+		{
+			"sections_dept": "ufor",
+			"maxLon": 84.08,
+			"minLat": 13
+		},
+		{
+			"sections_dept": "urst",
+			"maxLon": 82.16,
+			"minLat": 19
+		},
+		{
+			"sections_dept": "ursy",
+			"maxLon": 82.83,
+			"minLat": 9
+		},
+		{
+			"sections_dept": "vant",
+			"maxLon": 76.03,
+			"minLat": 13
+		},
+		{
+			"sections_dept": "visa",
+			"maxLon": 89,
+			"minLat": 5
+		},
+		{
+			"sections_dept": "wood",
+			"maxLon": 89,
+			"minLat": 0
+		},
+		{
+			"sections_dept": "wrds",
+			"maxLon": 79.12,
+			"minLat": 12
+		},
+		{
+			"sections_dept": "zool",
+			"maxLon": 92.71,
+			"minLat": 1
+		}
+	]
+}
